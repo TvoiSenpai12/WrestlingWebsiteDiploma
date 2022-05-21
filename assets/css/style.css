@@ -1,9 +1,13 @@
+/* ------CONNECTED STANDARD STYLES------ */
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Jura', sans-serif;
     text-decoration: none;
 }
+
+/* ------CONNECTED STANDARD STYLES------ */
 
 /* ------HEADER START------ */
 
@@ -68,4 +72,5 @@ nav a {
     border-radius: 12px;
     cursor: pointer;
 }
+
 /* ------HEADER STOP------ */
