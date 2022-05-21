@@ -26,6 +26,7 @@ header {
 .brand h1 {
     font-size: 24px;
     font-weight: bold;
+    padding: 0 12px;
 }
 
 .brand h2 {
