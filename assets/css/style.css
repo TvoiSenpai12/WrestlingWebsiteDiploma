@@ -78,7 +78,7 @@ nav a {
 /* ------MAIN START------ */
 
 .wallpaper {
-    background: url('./assets/img/wallpaper.png');
+    background: url('../img/wallpaper.png');
     position: relative;
     z-index: 2;
     display: flex;
