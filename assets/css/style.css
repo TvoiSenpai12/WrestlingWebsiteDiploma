@@ -182,12 +182,25 @@ main {
     width: 70%;
     height: 275px;
     border: solid #000 1px;
+    background: url(/assets/img//texture.jpg) repeat;
+}
+
+.citation-text {
+    border-left: #F02323 4px solid;
 }
 
 .citation-author img {
     width: 124px;
     height: 124px;
 }
+
+.citation-btn {
+    background-color: #ffffff00;
+    border: none;
+}
+
+
+
 
 /* ====citation stop==== */
 
