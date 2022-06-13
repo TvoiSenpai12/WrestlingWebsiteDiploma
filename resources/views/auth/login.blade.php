@@ -9,7 +9,7 @@
             @csrf
 
             <input name="email" type="text" class="w-full h-12 border border-gray-500 rounded px-3" placeholder="Email" />
-            @error('name')
+            @error('email')
                 <p class="text-red-500">{{ $message }}</p>
             @enderror
 
