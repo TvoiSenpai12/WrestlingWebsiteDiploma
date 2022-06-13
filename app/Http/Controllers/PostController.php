@@ -14,4 +14,14 @@ class PostController extends Controller
             "posts" => $posts,
         ]);
     }
+
+    public function show($id)
+    {
+        $post = \App\Models\Post::findOrFail($id);
+
+
+        return view('posts.show', [
+            "post" => $post,
+        ]);
+    }
 }

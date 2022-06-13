@@ -6,12 +6,12 @@
 
     <title>@yield('title')</title>
 
-    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 </head>
 <body>
     
     @yield('content')
-    <script src="{{ asset('js/app.js') }}"></script>
+    {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
 </body>
 </html>
