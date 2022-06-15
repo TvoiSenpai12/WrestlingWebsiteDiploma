@@ -1,37 +1,47 @@
 @extends('layout.admin')
-@section('title', 'Добавить новость')
+@section('title', isset($post) ? "Редактировать новость ID {$post->id}" : "Добавить новость")
 @section('content')
 <div class="container mx-auto px-6 py-8">
-    <h3 class="text-gray-700 text-3xl font-medium">Добавить новую</h3>
+    <h3 class="text-gray-700 text-3xl font-medium">{{ isset($post) ? "Редактировать новость ID {$post->id}" : "Добавить новость" }}</h3>
 
     <div class="mt-8">
 
     </div>
 
     <div class="mt-8">
-        <form class="space-y-5 mt-5" method="POST" action="{{ route("admin.posts.store") }}">
+        <form enctype="multipart/form-data" class="space-y-5 mt-5" method="POST" action="{{ isset($post) ? route("admin.posts.update", $post->id) : route("admin.posts.store") }}">
             @csrf
 
-            <input name="title" type="text" class="w-full h-12 border border-gray-800 rounded px-3" placeholder="Название" />
+            @if(isset($post))
+                @method('PUT')
+            @endif
+
+            <input name="title" type="text" class="w-full h-12 border border-gray-800 rounded px-3" placeholder="Название" value="{{ $post->title ?? '' }}"  />
             @error('title')
                 <p class="text-red-500">{{ $message }}</p>
             @enderror
 
-            <input name="preview" type="text" class="w-full h-12 border border-gray-800 rounded px-3" placeholder="Краткое описание" />
+            <input name="preview" type="text" class="w-full h-12 border border-gray-800 rounded px-3" placeholder="Краткое описание" value="{{ $post->preview ?? '' }}" />
             @error('preview')
                 <p class="text-red-500">{{ $message }}</p>
             @enderror
 
-            <input name="description" type="text" class="w-full h-12 border border-gray-800 rounded px-3" placeholder="Описание" />
+            <input name="description" type="text" class="w-full h-12 border border-gray-800 rounded px-3" placeholder="Описание" value="{{ $post->description ?? '' }}" />
             @error('description')
                 <p class="text-red-500">{{ $message }}</p>
             @enderror
 
-            <div>
-                <img class="h-64 w-64" src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-            </div>
+            @if(isset($post) && $post->thumbnail)
+                <div>
+                    <img class="h-64 w-64" src="/public/storage/posts{{ $post->thumbnail }}">
+                </div>
+            @endif
 
-            <input type="file" class="w-full h-12" placeholder="Обложка" />
+            <input name="thumbnail" type="file" class="w-full h-12" placeholder="Обложка" />
+            @error('thumbnail')
+                <p class="text-red-500">{{ $message }}</p>
+            @enderror
+
 
             <button type="submit" class="text-center w-full bg-blue-900 rounded-md text-white py-3 font-medium">Сохранить</button>
         </form>

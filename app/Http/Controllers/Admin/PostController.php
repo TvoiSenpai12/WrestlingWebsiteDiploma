@@ -52,21 +52,34 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        return view("admin.posts.create", [
+            "post" => $post,
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\PostFormRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PostFormRequest $request, $id)
     {
-        //
+        $post = Post::findOrFail($id);
+
+        $data = $request->validated();
+
+        if ($request->has("thumbnail")) {
+            $thumbnail = str_replace("public/posts", "", $request->file("thumbnail")->store("public/posts"));
+            $data["thumbnail"] = $thumbnail;
+        }
+
+        $post->update($data);
+
+        return redirect(route("admin.posts.index"));
     }
 
     /**
