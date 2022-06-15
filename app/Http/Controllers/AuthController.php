@@ -51,6 +51,7 @@ class AuthController extends Controller
         $password = uniqid();
 
         $user->password = bcrypt($password);
+        // dd($user);
         $user->save();
 
         Mail::to($user)->send(new ForgotPassword($password));
