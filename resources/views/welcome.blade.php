@@ -15,7 +15,7 @@
     <main>
         <section>
             <div class="container">
-                
+
             </div>
         </section>
     
@@ -27,6 +27,9 @@
         @endforeach
         </div>
     </section>
-
     </main>
+
+    <footer>
+        @include('partials.footer')
+    </footer>
 @endsection

@@ -19,7 +19,5 @@
   </div>
 </div>
 
-<h2 class="text-center font-bold text-3xl p-3">Другие новости</h2>
-
 
 @endsection

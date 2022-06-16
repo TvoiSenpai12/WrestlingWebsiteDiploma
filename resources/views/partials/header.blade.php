@@ -6,7 +6,7 @@
         </a>
         <ul class="flex items-center hidden space-x-8 lg:flex">
           <li><a href="{{ route("home") }}" aria-label="ГЛАВНАЯ" title="ГЛАВНАЯ" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">ГЛАВНАЯ</a></li>
-          <li><a href="/" aria-label="ИСТОРИЯ БОРЬБЫ" title="ИСТОРИЯ БОРЬБЫ" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">ИСТОРИЯ БОРЬБЫ</a></li>
+          <li><a href="/" aria-label="О ЗАЛЕ" title="О ЗАЛЕ" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">О ЗАЛЕ</a></li>
           <li><a href="{{ route("posts.index") }}" aria-label="НОВОСТИ" title="НОВОСТИ" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">НОВОСТИ</a></li>
           <li><a href="/" aria-label="КОНТАКТЫ" title="КОНТАКТЫ" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">КОНТАКТЫ</a></li>
         </ul>
