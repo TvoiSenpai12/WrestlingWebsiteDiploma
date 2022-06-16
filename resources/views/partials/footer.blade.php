@@ -4,7 +4,7 @@
       <div class="flex justify-center mb-12">
         <img src="/resources/img/logo.png" alt="">
       </div>
-      <div class="flex justify-center mb-6">
+      <div class="flex justify-center flex-wrap mb-6">
         <div>
           <a href="">
             <p class="font-medium tracking-wide text-gray-300 p-5">ГЛАВНАЯ</p>
