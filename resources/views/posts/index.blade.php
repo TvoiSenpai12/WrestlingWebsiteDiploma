@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title', 'Статьи')
+@section('title', 'Новости')
 @section('content')
     @include('partials.header')
 
@@ -8,9 +8,12 @@
         @foreach ($posts as $post)
             @include('posts.partials.item', ["post" => $post])
         @endforeach
-        
     </div>
     <br>
-    {{ $posts->links() }}
+    <div class="max-w-2xl mx-auto">
+        <div class="inline-flex -space-x-px">
+            {{ $posts->links() }}
+        </div>
+    </div>
 </section>
 @endsection
