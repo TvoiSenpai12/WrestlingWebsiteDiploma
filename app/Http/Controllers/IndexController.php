@@ -14,4 +14,10 @@ class IndexController extends Controller
             "posts" => $posts,
         ]);
     }
+
+    public function contacts()
+    {
+        
+        return view("contacts", []);
+    }
 }
