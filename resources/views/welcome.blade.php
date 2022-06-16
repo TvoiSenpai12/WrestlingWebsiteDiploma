@@ -6,16 +6,31 @@
         <div class="flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover h-96" style="background-image: url(/resources/img/header.png);">
             <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
                 <div class="text-center">
-                    <h1 class="text-2xl font-semibold text-white uppercase lg:text-3xl">ГРЕКО-РИМСКАЯ БОРЬБА В <span class="text-red-500">РОСТОВЕ-НА-ДОНУ</span></h1>
+                    <h1 class="font-bold text-2xl text-white uppercase lg:text-3xl">ГРЕКО-РИМСКАЯ БОРЬБА В <span class="text-red-500 font-bold">РОСТОВЕ-НА-ДОНУ</span></h1>
                     </div>
             </div> 
         </div>
     </header>
 
     <main>
-        <section>
-            <div class="container">
+        <section class="flex justify-center">
+            <div class="container flex justify-center  divide-solid border-2 border-black " style="background-image: url(/resources/img/texture.jpg);">
+                <div class="flex flex-col">
+                    <h4 class="text-2xl">Цитаты</h4>
+                    <p>Не стесняйся себя. Если решил - действуй. Далее - не наступай на ногу.
+                        То есть не нарушай правила. И помни, что лучший помощник - дисциплина.
+                        Все можно разрушить праздностью, которая помешает достичь
+                        по-настоящему больших результатов.
+                    </p>
+                    </div>
 
+                <div class="flex flex-col items-center text-center">
+                    <img src="/resources/img/citata1.jpg" alt="" class="w-40 rounded-tl-full rounded-bl-full rounded-br-full rounded-tr-full">
+                    Александр Карелин<br/>
+                    Заслуженный мастер спорта СССР 1988
+                    Герой Российской Федерации 1996
+                </div>
+                <button>&gt;</button>
             </div>
         </section>
     

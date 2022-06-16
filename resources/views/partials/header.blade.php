@@ -5,15 +5,15 @@
             <img src="/resources/img/logo.png" alt="">
         </a>
         <ul class="flex items-center hidden space-x-8 lg:flex">
-          <li><a href="{{ route("home") }}" aria-label="ГЛАВНАЯ" title="ГЛАВНАЯ" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">ГЛАВНАЯ</a></li>
-          <li><a href="/" aria-label="О ЗАЛЕ" title="О ЗАЛЕ" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">О ЗАЛЕ</a></li>
-          <li><a href="{{ route("posts.index") }}" aria-label="НОВОСТИ" title="НОВОСТИ" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">НОВОСТИ</a></li>
-          <li><a href="/" aria-label="КОНТАКТЫ" title="КОНТАКТЫ" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">КОНТАКТЫ</a></li>
+          <li><a href="{{ route("home") }}" aria-label="ГЛАВНАЯ" title="ГЛАВНАЯ" class="font-bold tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">ГЛАВНАЯ</a></li>
+          <li><a href="/" aria-label="О ЗАЛЕ" title="О ЗАЛЕ" class="font-bold tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">О ЗАЛЕ</a></li>
+          <li><a href="{{ route("posts.index") }}" aria-label="НОВОСТИ" title="НОВОСТИ" class="font-bold tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">НОВОСТИ</a></li>
+          <li><a href="{{ route("contacts") }}" aria-label="КОНТАКТЫ" title="КОНТАКТЫ" class="font-boldtracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">КОНТАКТЫ</a></li>
         </ul>
         <ul class="flex items-center hidden space-x-8 lg:flex">
           <li>
             <a href="/" class="" aria-label="Записаться" title="Записаться">
-              <button class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline">ЗАПИСАТЬСЯ</button>
+              <button class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline font-bold">ЗАПИСАТЬСЯ</button>
             </a>
           </li>
         </ul>
