@@ -32,7 +32,7 @@
           </a>
         </div>
         <div>
-          <a href="{{ route("contacts") }}">
+          <a href="{{ route("contacts.index") }}">
             <p class="font-blod tracking-wide text-white text-xl p-5">КОНТАКТЫ</p>
           </a>
         </div>

@@ -19,7 +19,7 @@
                 <div class="container items-center flex justify-center divide-solid border-2 border-black" style="background-image: url(/resources/img/texture.jpg);">
                     <div class="flex flex-col w-2/4 border-l-4 border-red-500 pl-5">
                         <h4 class="font-bold text-3xl">Цитаты</h4>
-                        <p class="">
+                        <p>
                             Не стесняйся себя. Если решил - действуй. Далее - не наступай на ногу.
                             То есть не нарушай правила. И помни, что лучший помощник - дисциплина.
                             Все можно разрушить праздностью, которая помешает достичь
@@ -40,8 +40,9 @@
                 <div class="container items-center flex justify-center divide-solid border-2 border-black" style="background-image: url(/resources/img/texture.jpg);">
                     <div class="flex flex-col w-2/4 border-l-4 border-red-500 pl-5">
                         <h4 class="font-bold text-3xl">Цитаты</h4>
-                        <p class="">
-                            -Ни одного дня без упражнений. Природа не наградила тебя силой, но если будешь каждый день
+                        <p>
+                            -Ни одного дня без упражнений.
+                            Природа не наградила тебя силой, но если будешь каждый день
                             КАЧАТЬ мускулы - выйдет толк. И борцом станешь хорошим.
                         </p>
                     </div>

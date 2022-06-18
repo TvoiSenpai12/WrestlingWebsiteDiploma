@@ -21,7 +21,7 @@
             </div>
           </li>
           <li><a href="{{ route("posts.index") }}" aria-label="НОВОСТИ" title="НОВОСТИ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">НОВОСТИ</a></li>
-          <li><a href="{{ route("contacts") }}" aria-label="КОНТАКТЫ" title="КОНТАКТЫ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">КОНТАКТЫ</a></li>
+          <li><a href="{{ route("contacts.index") }}" aria-label="КОНТАКТЫ" title="КОНТАКТЫ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">КОНТАКТЫ</a></li>
         </ul>
         <ul class="flex items-center hidden space-x-8 lg:flex">
           <li>
@@ -58,7 +58,7 @@
                 </div>
               </li>
               <li><a href="{{ route("posts.index") }}" aria-label="НОВОСТИ" title="НОВОСТИ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">НОВОСТИ</a></li>
-              <li><a href="{{ route("contacts") }}" aria-label="КОНТАКТЫ" title="КОНТАКТЫ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">КОНТАКТЫ</a></li>
+              <li><a href="{{ route("contacts.index") }}" aria-label="КОНТАКТЫ" title="КОНТАКТЫ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">КОНТАКТЫ</a></li>
             </ul>
             <ul class="flex items-center space-x-8 lg:flex">
               <li>
