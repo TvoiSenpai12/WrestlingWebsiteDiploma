@@ -26,7 +26,6 @@
                 <p class="text-red-500">{{ $message }}</p>
             @enderror
 
-            {{-- <input name="description" type="text" class="w-full h-12 border border-gray-800 rounded px-3" placeholder="Описание" value="{{ $post->description ?? '' }}" /> --}}
             <textarea type="text" name="description" class="w-full h-32 border border-gray-800 rounded px-3">{{ $post->description ?? '' }}</textarea>
             @error('description')
                 <p class="text-red-500">{{ $message }}</p>

@@ -25,7 +25,7 @@
         </ul>
         <ul class="flex items-center hidden space-x-8 lg:flex">
           <li>
-            <a href="/" class="" aria-label="Записаться" title="Записаться">
+            <a href="tel:+79281032353" aria-label="Записаться" title="Записаться">
               <button class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline font-bold hover:text-gray-300">ЗАПИСАТЬСЯ</button>
             </a>
           </li>
@@ -62,7 +62,7 @@
             </ul>
             <ul class="flex items-center space-x-8 lg:flex">
               <li>
-                <a href="/" class="" aria-label="Записаться" title="Записаться">
+                <a href="tel:+79281032353" aria-label="Записаться" title="Записаться">
                   <button class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline font-bold hover:text-gray-300">ЗАПИСАТЬСЯ</button>
                 </a>
               </li>
