@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('home');
-Route::get('/history', [App\Http\Controllers\IndexController::class, 'history'])->name('history');
-Route::get('/calendar', [App\Http\Controllers\IndexController::class, 'calendar'])->name('calendar');
+
+Route::get('/history', [App\Http\Controllers\HallController::class, 'history'])->name('hall.history');
+Route::get('/calendar', [App\Http\Controllers\HallController::class, 'calendar'])->name('hall.calendar');
 
 Route::get('/contacts', [App\Http\Controllers\ContactsController::class, 'index'])->name('contacts.index');
 

@@ -14,10 +14,4 @@ class IndexController extends Controller
             "posts" => $posts,
         ]);
     }
-
-    public function history()
-    {
-        
-        return view("history", []);
-    }
 }
