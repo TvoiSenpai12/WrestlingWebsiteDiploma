@@ -5,3 +5,13 @@
 * {
     font-family: 'Jura', sans-serif;
 }
+
+.burger-hidden-none {
+    transition: 2s;
+    display: none;
+}
+
+.burger-hidden-block {
+    transition: 2s;
+    display: block;
+}

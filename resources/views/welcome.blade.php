@@ -3,7 +3,7 @@
 @section('content')
     <header>
         @include('partials.header')
-        <div class="flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover h-96" style="background-image: url(/resources/img/header.png);">
+        <div class="flex items-center justify-center m-auto mb-12 bg-fixed bg-center bg-cover" style="background-image: url(/resources/img/header.png); height: 550px;">
             <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
                 <div class="text-center">
                     <h1 class="font-bold text-2xl text-white uppercase lg:text-3xl">ГРЕКО-РИМСКАЯ БОРЬБА В <span class="text-red-500 font-bold">РОСТОВЕ-НА-ДОНУ</span></h1>
