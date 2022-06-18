@@ -1,12 +1,25 @@
 <div class="bg-gray-900">
-    <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <nav class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div class="relative flex items-center justify-between">
           <a href="{{ route("home") }}" aria-label="Company" title="Company" class="inline-flex items-center">
             <img src="/resources/img/logo.png" alt="">
         </a>
         <ul class="flex items-center hidden space-x-8 lg:flex">
           <li><a href="{{ route("home") }}" aria-label="ГЛАВНАЯ" title="ГЛАВНАЯ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">ГЛАВНАЯ</a></li>
-          <li><a href="/" aria-label="О ЗАЛЕ" title="О ЗАЛЕ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">О ЗАЛЕ</a></li>
+          <li x-data="{ dropdownOpen: false }" class="relative">
+            <button @click="dropdownOpen = !dropdownOpen" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">
+              ЗАЛ
+            </button>
+              <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+            <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+              <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-red-500 hover:text-white">
+                КАЛЕНДАРЬ СОРЕВНОВАНИЙ
+              </a>
+              <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-red-500 hover:text-white">
+                ИСТОРИЯ БОРЬБЫ
+              </a>
+            </div>
+          </li>
           <li><a href="{{ route("posts.index") }}" aria-label="НОВОСТИ" title="НОВОСТИ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">НОВОСТИ</a></li>
           <li><a href="{{ route("contacts") }}" aria-label="КОНТАКТЫ" title="КОНТАКТЫ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">КОНТАКТЫ</a></li>
         </ul>
@@ -17,6 +30,7 @@
             </a>
           </li>
         </ul>
+        
         <!-- Mobile menu -->
         <div class="lg:hidden">
           <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline burger">
@@ -29,7 +43,20 @@
           <div class="burger-hidden-none">
             <ul class="flex flex-wrap flex-col items-center space-x-8 lg:flex">
               <li><a href="{{ route("home") }}" aria-label="ГЛАВНАЯ" title="ГЛАВНАЯ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">ГЛАВНАЯ</a></li>
-              <li><a href="/" aria-label="О ЗАЛЕ" title="О ЗАЛЕ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">О ЗАЛЕ</a></li>
+              <li x-data="{ dropdownOpen: false }" class="relative">
+                <button @click="dropdownOpen = !dropdownOpen" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">
+                  ЗАЛ
+                </button>
+                  <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+                <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+                  <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-red-500 hover:text-white">
+                    КАЛЕНДАРЬ СОРЕВНОВАНИЙ
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-red-500 hover:text-white">
+                    ИСТОРИЯ БОРЬБЫ
+                  </a>
+                </div>
+              </li>
               <li><a href="{{ route("posts.index") }}" aria-label="НОВОСТИ" title="НОВОСТИ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">НОВОСТИ</a></li>
               <li><a href="{{ route("contacts") }}" aria-label="КОНТАКТЫ" title="КОНТАКТЫ" class="font-bold tracking-wide text-white transition-colors duration-200 text-xl hover:text-red-500">КОНТАКТЫ</a></li>
             </ul>
@@ -42,6 +69,7 @@
             </ul>
           </div>
         </div>
-      </div>
+        
+      </nav>
     </div>
-</div> 
+</div>

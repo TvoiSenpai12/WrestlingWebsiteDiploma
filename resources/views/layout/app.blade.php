@@ -16,6 +16,7 @@
     
     @yield('content')
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/burger.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 </html>
