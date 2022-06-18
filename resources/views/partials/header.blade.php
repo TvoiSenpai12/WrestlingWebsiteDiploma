@@ -15,7 +15,7 @@
               <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-red-500 hover:text-white">
                 КАЛЕНДАРЬ СОРЕВНОВАНИЙ
               </a>
-              <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-red-500 hover:text-white">
+              <a href="{{ route("history") }}" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-red-500 hover:text-white">
                 ИСТОРИЯ БОРЬБЫ
               </a>
             </div>
@@ -52,7 +52,7 @@
                   <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-red-500 hover:text-white">
                     КАЛЕНДАРЬ СОРЕВНОВАНИЙ
                   </a>
-                  <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-red-500 hover:text-white">
+                  <a href="{{ route("history") }}" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-red-500 hover:text-white">
                     ИСТОРИЯ БОРЬБЫ
                   </a>
                 </div>

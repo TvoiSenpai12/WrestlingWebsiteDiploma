@@ -20,4 +20,10 @@ class IndexController extends Controller
         
         return view("contacts", []);
     }
+
+    public function history()
+    {
+        
+        return view("history", []);
+    }
 }
