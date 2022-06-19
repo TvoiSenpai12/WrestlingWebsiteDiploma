@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title', $post->title)
+@section('title', $post->title . ' - Клуб "АТЛАНТ" Греко-римская борьба в Ростове-на-Дону')
 @section('content')
 <header>
   @include('partials.header')

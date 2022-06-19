@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title', 'Новости')
+@section('title', 'Новости - Клуб "АТЛАНТ" Греко-римская борьба в Ростове-на-Дону')
 @section('content')
     @include('partials.header')
 
